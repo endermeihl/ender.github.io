@@ -16,3 +16,9 @@ def primes():
         n = next(it)  # 返回序列的第一个数
         yield n
         it = filter(_not_divisible(n), it)  # 构造新序列
+
+for n in primes():
+    if n < 1000:
+        print(n)
+    else:
+        break

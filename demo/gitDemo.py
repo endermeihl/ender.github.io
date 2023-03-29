@@ -22,4 +22,4 @@ def get_branches(project_dir):
     print(branch_list)
     return branch_list
 
-get_branches('C:/Users/ender/IdeaProjects/gitwebapp/jerryTrainManage')
+get_branches('/Users/meihailei/IdeaProjects/settlement')

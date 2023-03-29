@@ -13,19 +13,19 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        dump = ListNode(0)
-        cur = dump
-        carry = 0
-        while l1 or l2:
-            if l1:
-                carry += l1.val
-                l1=l1.next
+        dump = ListNode(0) # dummy node
+        cur = dump # current node
+        carry = 0   
+        while l1 or l2: # while l1 or l2 is not None
+            if l1: # if l1 is not None
+                carry += l1.val 
+                l1=l1.next # move to next node
             if l2:
                 carry += l2.val
                 l2=l2.next
-                cur.next = ListNode(carry%10)
-                cur = cur.next
-                carry //= 10
-            if carry == 1:
-                cur.next = ListNode(1)
+            cur.next = ListNode(carry%10) 
+            cur = cur.next
+            carry //= 10 # carry = carry // 10 # carry = int(carry / 10)
+        if carry == 1:
+            cur.next = ListNode(1)
         return dump.next

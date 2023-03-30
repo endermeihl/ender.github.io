@@ -1,3 +1,6 @@
+#  6. ZigZag Conversion
+#  https://leetcode.com/problems/zigzag-conversion/
+
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if len(s)==0 or numRows == 1:return s

@@ -1,3 +1,7 @@
+# leetcode 5
+# Longest Palindromic Substring
+# https://leetcode.com/problems/longest-palindromic-substring/
+
 def longestPalindrome(s)->str:
     max_len = 0
     max_str = ''

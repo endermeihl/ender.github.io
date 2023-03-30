@@ -1,11 +1,13 @@
 # Given a string s, find the length of the longest ubstring without repeating characters.
+# leetcode 3
+# https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         l = len(s)
         maxnum =0
         pra = set() # create a set # set() is a function # set function list
-        
+
         for i in range(l):
             if s[i] not in pra:
                 pra.add(s[i])

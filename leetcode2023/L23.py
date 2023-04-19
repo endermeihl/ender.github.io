@@ -19,14 +19,10 @@ class Solution:
             temp = res
             while list1!=None and list2!=None:
                 if list1.val<=list2.val:
-                    temp.next=ListNode()
-                    temp.next.val=list1.val
-                    temp=temp.next
+                    temp.next=list1
                     list1=list1.next
                 else:
-                    temp.next=ListNode()
-                    temp.next.val=list2.val
-                    temp=temp.next
+                    temp.next=list2
                     list2=list2.next
             if list1!=None:
                 temp.next=list1

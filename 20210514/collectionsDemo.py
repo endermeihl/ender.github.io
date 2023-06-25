@@ -1,4 +1,5 @@
-from collections import *
+import collections
+from collections import Counter
 
 #Counter
 s = 'abcbcaadceddsef'

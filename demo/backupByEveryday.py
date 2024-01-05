@@ -17,10 +17,8 @@ def backupeverday():
         client.request('GET', "/" + url[2])
         response = client.getresponse()
         print(response.status)
+        client.close()
     except Exception as e:
         print('except:', repr(e))
-    finally:
-        if client:
-            client.close()
 
 backupeverday()

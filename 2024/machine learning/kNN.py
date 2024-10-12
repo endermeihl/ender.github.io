@@ -1,4 +1,4 @@
-from matplotlib.pylab import f
+import matplotlib.pyplot as plt
 from numpy import *
 import operator
 from os import listdir

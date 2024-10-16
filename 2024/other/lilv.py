@@ -34,7 +34,7 @@ months = 20 * 12  # 20年
 
 # 原利率和新利率
 original_rate = 4.2  # 4.2%
-new_rate = 3.7  # 3.7%
+new_rate = 3.9  # 3.7%
 
 # 计算利率比较
 payment_comparison = compare_interest_rates(loan_amount, original_rate, new_rate, months)
